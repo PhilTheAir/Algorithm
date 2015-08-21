@@ -3,6 +3,7 @@ calculate the last 6 digits of the result S = 1! + 2! + 3! + ... + n!
 n <= 1000000
 */
 
+console.time('calculate the last 6 digits of the result S');
 var startTime = Date.now();
 var n = Number(process.argv[2]);
 var s = 0;
@@ -24,3 +25,4 @@ for (var i = 1; i <= n; i ++)
 // Number.MIN_VALUE // 5e-324
 console.log(s);
 console.log('Time used : ' + (Date.now() - startTime) / 1000);
+console.timeEnd('calculate the last 6 digits of the result S');
