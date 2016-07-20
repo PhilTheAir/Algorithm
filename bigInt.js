@@ -2,7 +2,7 @@ var big = (n) => {
     var a = [];
     a.push(1);
     for (var m = 0; m < 100; m ++ ) {
-        a.push(0);
+        a.push(0); //       
     }
     var carry = 0;
     for (var i = 2; i <=n; i ++) {
