@@ -3,7 +3,7 @@ var Node = function(value) {
     this.left = null;
     this.right = null;
     return this;
-};//
+};
 
 Node.prototype.insert = function(newNode) { 
     if(newNode.value < this.value) {
