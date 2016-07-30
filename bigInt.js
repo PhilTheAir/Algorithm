@@ -1,4 +1,5 @@
 var big = (n) => {
+    
     var a = [];
     a.push(1);
     for (var m = 0; m < 100; m ++ ) {
