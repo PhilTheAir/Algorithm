@@ -7,7 +7,7 @@ console.time('calculate the last 6 digits of the result S');
 var startTime = Date.now();
 var n = Number(process.argv[2]);
 var s = 0;
-var MOD = 1000000;  //
+var MOD = 1000000;
 var sixZero = 25;
 n = Math.min(n, sixZero);
 
