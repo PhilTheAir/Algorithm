@@ -3,21 +3,17 @@ var readline = require('readline');
 var rl = readline.createInterface({ input: process.stdin,
   									output: process.stdout });
 
-rl.question("Please input a line of words ... ", function(words) 
-{
+rl.question("Please input a line of words ... ", function(words) {
 	// the 'words' variety is a string with the content equivalent to the array process.argv.slice(2)
 	var transformed = '$#';
-	for (var index in words)
-	{
+	for (var index in words){
 		transformed += words.charAt(index);
 	}
 	var p = [];
     var mx = 0;
     var id = 0;
-    for (var i = 1; i <= transformed.length; i++)
-    {
-        if (mx > i)
-        {
+    for (var i = 1; i <= transformed.length; i++) {
+        if (mx > i) {
             p[i] = (p[2 * id - i] < (mx - i) ? p[2 * id - i] : (mx - i));
         }
         else	// http://www.cnblogs.com/biyeymyhjob/archive/2012/10/04/2711527.html
