@@ -1,7 +1,5 @@
-var algorithm =
-{
-    sort: function (array)
-    {
+var algorithm = {
+    sort: function (array) {
         var heapSize = array.length;
         buildHeap(array, heapSize);
         while (heapSize > 1)
@@ -61,15 +59,15 @@ function heapify(array, heapSize, i)
 Properties
     Not stable
     O(1) extra space (see discussion)
-    O(n¡¤lg(n)) time
+    O(nÂ¡Â¤lg(n)) time
     Not really adaptive
 
 Discussion
-    Heap sort is simple to implement, performs an O(n¡¤lg(n)) in-place sort, but is not stable.
-    The first loop, the ¦¨(n) "heapify" phase, puts the array into heap order. 
-    The second loop, the O(n¡¤lg(n)) "sortdown" phase, repeatedly extracts the maximum and restores heap order.
+    Heap sort is simple to implement, performs an O(nÂ¡Â¤lg(n)) in-place sort, but is not stable.
+    The first loop, the Â¦Â¨(n) "heapify" phase, puts the array into heap order. 
+    The second loop, the O(nÂ¡Â¤lg(n)) "sortdown" phase, repeatedly extracts the maximum and restores heap order.
     The sink function is written recursively for clarity. 
-    Thus, as shown, the code requires ¦¨(lg(n)) space for the recursive call stack. 
+    Thus, as shown, the code requires Â¦Â¨(lg(n)) space for the recursive call stack. 
     However, the tail recursion in sink() is easily converted to iteration, which yields the O(1) space bound.
     Both phases are slightly adaptive, though not in any particularly useful manner. 
     In the nearly sorted case, the heapify phase destroys the original order. 
