@@ -5,7 +5,7 @@ var big = (n) => {
     for (var m = 0; m < 100; m ++ ) {
         a.push(0);
     }
-    //
+    
     var carry = 0;
     for (var i = 2; i <=n; i ++) {
         for (var j = 0; j < a.length; j ++ ) {
