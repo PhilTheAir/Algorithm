@@ -21,6 +21,8 @@ var big = (n) => {
     return result;
 };
 
+//
+
 console.time('calculation');
 console.log(big(30));
 console.timeEnd('calculation');
