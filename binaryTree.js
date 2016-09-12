@@ -59,6 +59,8 @@ Node.prototype.preOrderTraversal = function(visitor) {
     }
 };
 
+//
+
 Node.prototype.postOrderTraversal = function(visitor) {        
     if(this.left !== null) {
         this.left.postOrderTraversal(visitor);
