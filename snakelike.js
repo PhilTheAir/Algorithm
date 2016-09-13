@@ -23,31 +23,24 @@ var x = 0;
 var y = n - 1;
 a[0][n - 1] = 1;
 
-while (total < Math.pow(n, 2))
-{
-	while ((x + 1 < n) && (a[x + 1][y] === 0))
-	{
+while (total < Math.pow(n, 2)) {
+	while ((x + 1 < n) && (a[x + 1][y] === 0)) {
 		a[++x][y] = ++ total;
 	}
-	while ((y - 1 >= 0) && (a[x][y - 1] === 0))
-	{
+	while ((y - 1 >= 0) && (a[x][y - 1] === 0)) {
 		a[x][--y] = ++ total;
 	}
-	while ((x - 1 >= 0) && (a[x - 1][y] === 0))
-	{
+	while ((x - 1 >= 0) && (a[x - 1][y] === 0)) {
 		a[--x][y] = ++ total;
 	}
-	while ((y + 1 < n) && (a[x][y + 1] === 0))
-	{
+	while ((y + 1 < n) && (a[x][y + 1] === 0)) {
 		a[x][++y] = ++ total;
 	}
 }
 
-for (var i = 0; i < n; i ++)
-{
+for (var i = 0; i < n; i ++) {
 	var s = '';
-	for (var j = 0; j < n; j ++)
-	{
+	for (var j = 0; j < n; j ++) {
 		s += (a[i][j] + "  ").slice(0, 3);
 	}
 	console.log(s);
