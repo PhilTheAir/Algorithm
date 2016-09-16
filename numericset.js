@@ -20,16 +20,13 @@ for (var abc = 111; abc <= 999; abc ++) {
 		var s = '' + abc + de + x + y + z;
 		var yes = true;
 		var aim = n.toString();
-		for (var i = 0; i < s.length; i ++)
-		{
-			if (aim.indexOf(s.charAt(i)) === -1)
-			{
+		for (var i = 0; i < s.length; i ++) {
+			if (aim.indexOf(s.charAt(i)) === -1) {
 				yes = false;
 				break;
 			}
 		}
-		if (yes)
-		{
+		if (yes) {
 			console.log('<' + (++count) + '>');
 			console.log('  ' + abc + '\n' + 'X  ' + de + '\n-----\n ' + x + '\n' + y + '\n-----\n' + z + '\n\n');
 		}
