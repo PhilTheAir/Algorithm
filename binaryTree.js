@@ -37,8 +37,7 @@ Node.prototype.depthFirstSearch = function(searchValue) {
         return false;
     }
 };
-
-
+//
 Node.prototype.inorderTraversal = function(visitor) {  
     if(this.left !== null) {
         this.left.inorderTraversal(visitor);
