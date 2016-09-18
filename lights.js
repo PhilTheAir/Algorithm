@@ -18,21 +18,16 @@ for (var i = 0; i < n; i ++) {
 	a.push(false);
 }
 
-for (var i = 1; i <= k; i ++)
-{
-	for (var j = 1; j <= n; j ++)
-	{
-		if (j % i === 0)
-		{
+for (var i = 1; i <= k; i ++) {
+	for (var j = 1; j <= n; j ++) {
+		if (j % i === 0) {
 			a[j] = !a[j];
 		}
 	}
 }
 
-for (var i = 1; i <=n; i ++)
-{
-	if (a[i])
-	{
+for (var i = 1; i <=n; i ++) {
+	if (a[i]) {
 		console.log(i);
 	}
 }
