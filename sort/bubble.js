@@ -1,13 +1,8 @@
-﻿var algorithm =
-{
-    bubble_sort: function (array)
-    {
-        for (var i = 0; i < array.length - 1; i++)
-        {
-            for (var j = 1; j < array.length - i; j++)
-            {
-                if (array[j - 1] > array[j])
-                {
+﻿var algorithm = {
+    bubble_sort: function (array) {
+        for (var i = 0; i < array.length - 1; i++) {
+            for (var j = 1; j < array.length - i; j++) {
+                if (array[j - 1] > array[j]) {
                     algorithm.swap(array, j, j - 1);
                 }
             }
@@ -16,8 +11,7 @@
     },
 
     // Swaps elements at indexes `a` and `b`.
-    swap: function (array, a, b)
-    {
+    swap: function (array, a, b) {
         var temp = array[a];
         array[a] = array[b];
         array[b] = temp;
