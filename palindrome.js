@@ -32,10 +32,8 @@ rl.question("Please input a line of words ... ", function(words) {
     }
     var max = 0;
     var ii;
-    for(var  i = 1; i < transformed.length; i++)
-    {
-        if (p[i] > max)
-        {
+    for(var  i = 1; i < transformed.length; i++) {
+        if (p[i] > max) {
             ii = i;
             max = p[i];
         }
@@ -44,10 +42,8 @@ rl.question("Please input a line of words ... ", function(words) {
     var start = ii - max ;
     var end = ii + max;
     var s = '';
-    for (var i = start; i <= end; i++)
-    {
-        if (transformed.charAt(i) != '#')
-        {
+    for (var i = start; i <= end; i++) {
+        if (transformed.charAt(i) != '#') {
             s += transformed.charAt(i);
         }
     }
