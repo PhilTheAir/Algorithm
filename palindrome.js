@@ -16,16 +16,14 @@ rl.question("Please input a line of words ... ", function(words) {
         if (mx > i) {
             p[i] = (p[2 * id - i] < (mx - i) ? p[2 * id - i] : (mx - i));
         }
-        else	// http://www.cnblogs.com/biyeymyhjob/archive/2012/10/04/2711527.html
-        {
+        // http://www.cnblogs.com/biyeymyhjob/archive/2012/10/04/2711527.html
+        else {
             p[i] = 1;
         }
-        while(transformed.charAt(i - p[i]) == transformed.charAt(i + p[i]))
-        {
+        while(transformed.charAt(i - p[i]) == transformed.charAt(i + p[i])) {
         	p[i]++;
        	}    
-        if (i + p[i] > mx)
-        {
+        if (i + p[i] > mx) {
             mx = i + p[i];
             id = i;
         }
