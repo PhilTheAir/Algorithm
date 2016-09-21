@@ -48,8 +48,7 @@ rl.question("Please input a line of words ... ", function(words) {
         }
     }
     console.log(s);
-
-  	rl.close();
+    rl.close();
 });
 
 /*
