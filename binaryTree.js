@@ -9,16 +9,20 @@ Node.prototype.insert = function(newNode) {
     if(newNode.value < this.value) {
         if(this.left === null) {
             this.left = newNode;
-        } else {
+        } 
+        else {
             this.left.insert(newNode);
         }
-    } else if(newNode.value > this.value) {
+    } 
+    else if(newNode.value > this.value) {
         if(this.right === null) {
             this.right = newNode;
-        } else {
+        } 
+        else {
             this.right.insert(newNode);
         }
-    } else {
+    } 
+    else {
         return true;
     }
 };
@@ -28,11 +32,14 @@ Node.prototype.depthFirstSearch = function(searchValue) {
     if(this.value === searchValue) {
         console.log("search item found");
         return true;
-    } else if(searchValue < this.value && this.left !== null) {
+    } 
+    else if(searchValue < this.value && this.left !== null) {
         return this.left.depthFirstSearch(searchValue);
-    } else if(searchValue > this.value && this.right !== null) {
+    } 
+    else if(searchValue > this.value && this.right !== null) {
         return this.right.depthFirstSearch(searchValue);
-    } else {
+    } 
+    else {
         console.log("could not find "+searchValue);
         return false;
     }
@@ -73,7 +80,8 @@ Node.prototype.postOrderTraversal = function(visitor) {
 var BinarySearchTree = function(insertNode) {
     if(insertNode instanceof Node) {
         this.root = insertNode;
-    } else {
+    } 
+    else {
         this.root = new Node(insertNode);
     }
     return this;
@@ -82,7 +90,8 @@ var BinarySearchTree = function(insertNode) {
 BinarySearchTree.prototype.insert = function(insert) {  
     if(insert instanceof Node) {
         this.root.insert(insert);
-    } else {
+    } 
+    else {
         this.root.insert(new Node(insert));
     }
 };
