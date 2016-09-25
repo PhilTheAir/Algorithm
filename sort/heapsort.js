@@ -2,8 +2,7 @@ var algorithm = {
     sort: function (array) {
         var heapSize = array.length;
         buildHeap(array, heapSize);
-        while (heapSize > 1)
-        {
+        while (heapSize > 1) {
             algorithm.swap(array, 0, heapSize - 1);
             heapSize--;
             heapify(array, heapSize, 0);
@@ -12,44 +11,36 @@ var algorithm = {
     },
 
     // Swaps elements at indexes `a` and `b`.
-    swap: function (list, a, b)
-    {
+    swap: function (list, a, b) {
         var temp = list[a];
         list[a] = list[b];
         list[b] = temp;
     }
 };
 
-function buildHeap(array, heapSize)
-{
-    for (var i = Math.floor(array.length / 2) ; i >= 0; i--)
-    {
+function buildHeap(array, heapSize) {
+    for (var i = Math.floor(array.length / 2) ; i >= 0; i--) {
         heapify(array, heapSize, i);
     }
 }
 
-function heapify(array, heapSize, i)
-{
+function heapify(array, heapSize, i) {
     var left = i * 2 + 1;
     var right = i * 2 + 2;
     var largest;
 
-    if (left < heapSize && algorithm.compare(array[left], array[i]) > 0)
-    {
+    if (left < heapSize && algorithm.compare(array[left], array[i]) > 0) {
         largest = left;
     }
-    else
-    {
+    else {
         largest = i;
     }
 
-    if (right < heapSize && algorithm.compare(array[right], array[largest]) > 0)
-    {
+    if (right < heapSize && algorithm.compare(array[right], array[largest]) > 0) {
         largest = right;
     }
 
-    if (largest !== i)
-    {
+    if (largest !== i) {
         algorithm.swap(array, i, largest);
         heapify(array, heapSize, largest);
     }
