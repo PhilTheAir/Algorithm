@@ -6,7 +6,7 @@ e.g. n = 4:
 8  15 14 3
 7  6  5  4
 */
-
+ 
 var n = Number(process.argv[2]);
 var a = [];
 
