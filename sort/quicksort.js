@@ -18,7 +18,7 @@
 		swap(array, right, storeIndex); // 将基准元素放置到最后的正确位置上
 		return storeIndex;
 	}
-
+ 
 	function sort(array, left, right) {
 		if (left > right) {
 			return;
