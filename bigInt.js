@@ -6,7 +6,7 @@ var big = (n) => {
         a.push(0);
     }
     
-    var carry = 0;
+    var carry = 0; 
     for (var i = 2; i <=n; i ++) {
         for (var j = 0; j < a.length; j ++ ) {
             var s = a[j] * i + carry;
