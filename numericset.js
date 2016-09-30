@@ -7,8 +7,8 @@ abc * e
 abc * d
 abc * ed
 are all the comosition of given figures
-*/
- 
+*/  
+  
 var n = Number(process.argv[2]);
 var count = 0;
 
