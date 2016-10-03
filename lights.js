@@ -23,7 +23,7 @@ for (var i = 1; i <= k; i ++) {
 		if (j % i === 0) {
 			a[j] = !a[j];
 		}
-	}
+	} 
 }
 
 for (var i = 1; i <=n; i ++) {
