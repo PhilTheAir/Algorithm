@@ -39,7 +39,7 @@ Node.prototype.depthFirstSearch = function(searchValue) {
     else if(searchValue > this.value && this.right !== null) {
         return this.right.depthFirstSearch(searchValue);
     } 
-    else {
+    else { 
         console.log("could not find "+searchValue);
         return false;
     }
