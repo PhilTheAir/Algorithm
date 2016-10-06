@@ -8,7 +8,7 @@ var startTime = Date.now();
 var n = Number(process.argv[2]);
 var s = 0;
 var MOD = 1000000;
-var sixZero = 25;
+var sixZero = 25; 
 n = Math.min(n, sixZero);
 
 for (var i = 1; i <= n; i ++) {
