@@ -7,7 +7,7 @@ the third person switches those lights whose number is a multiple of 3
 there are k persons in total
 given n and k, k <= n <= 1000
 output the number of lights which are still on 
-*/
+*/ 
 
 var n = Number(process.argv[2]);
 var k = Number(process.argv[3]);
