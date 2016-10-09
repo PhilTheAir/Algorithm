@@ -4,7 +4,7 @@ var Node = function(value) {
     this.right = null;
     return this;
 };
- 
+  
 Node.prototype.insert = function(newNode) { 
     if(newNode.value < this.value) {
         if(this.left === null) {
