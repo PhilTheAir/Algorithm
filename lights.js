@@ -16,7 +16,7 @@ var a = [];
 
 for (var i = 0; i < n; i ++) {
 	a.push(false);
-}
+} 
 
 for (var i = 1; i <= k; i ++) {
 	for (var j = 1; j <= n; j ++) {
