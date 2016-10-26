@@ -24,3 +24,4 @@ var big = (n) => {
 console.time('calculation');
 console.log(big(30));
 console.timeEnd('calculation');
+ 
