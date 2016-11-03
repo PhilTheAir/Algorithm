@@ -30,7 +30,7 @@ Node.prototype.insert = function(newNode) {
 Node.prototype.depthFirstSearch = function(searchValue) {
     console.log(searchValue+": "+this.value);
     if(this.value === searchValue) {
-        console.log("search item found");
+        console.log("search item found"); 
         return true;
     } 
     else if(searchValue < this.value && this.left !== null) {
