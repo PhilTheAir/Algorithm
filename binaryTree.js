@@ -13,7 +13,7 @@ Node.prototype.insert = function(newNode) {
         else {  
             this.left.insert(newNode);
         } 
-    } 
+    }  
     else if(newNode.value > this.value) {
         if(this.right === null) {
             this.right = newNode;
