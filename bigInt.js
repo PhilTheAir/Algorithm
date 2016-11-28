@@ -14,7 +14,7 @@ var big = (n) => {
             carry = Math.floor(s / 10);  
         }  
     }    
-    var result = '';  
+    var result = '';   
     for (var k = a.length - 1; k >= 0; k --) {
         result += a[k] + '';
     }   
