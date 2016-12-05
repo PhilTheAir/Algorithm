@@ -15,7 +15,7 @@ var big = (n) => {
         }  
     }    
     var result = '';    
-    for (var k = a.length - 1; k >= 0; k --) {
+    for (var k = a.length - 1; k >= 0; k --) { 
         result += a[k] + '';
     }   
     return result;
