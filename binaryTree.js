@@ -22,7 +22,7 @@ Node.prototype.insert = function(newNode) {
             this.right.insert(newNode);
         }
     } 
-    else {
+    else { 
         return true;
     }
 };
