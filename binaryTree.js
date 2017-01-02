@@ -19,7 +19,7 @@ Node.prototype.insert = function(newNode) {
             this.right = newNode;
         } 
         else {
-            this.right.insert(newNode);
+            this.right.insert(newNode); 
         }
     } 
     else { 
