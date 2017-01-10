@@ -32,5 +32,5 @@ for (var abc = 111; abc <= 999; abc ++) {
 		}
 	}
 }
-
+ 
 console.log('The number of solutions = ' + count);
