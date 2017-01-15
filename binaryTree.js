@@ -20,7 +20,7 @@ Node.prototype.insert = function(newNode) {
         } 
         else {
             this.right.insert(newNode); 
-        }
+        } 
     } 
     else { 
         return true;
