@@ -8,7 +8,7 @@ var Node = function(value) {
 Node.prototype.insert = function(newNode) { 
     if(newNode.value < this.value) {
         if(this.left === null) {  
-            this.left = newNode;
+            this.left = newNode;  
         }    
         else {     
             this.left.insert(newNode);   
