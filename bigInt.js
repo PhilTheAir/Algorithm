@@ -19,7 +19,7 @@ var big = (n) => {
         result += a[k] + '';
     }     
     return result;
-}; 
+};  
 
 console.time('calculation');  
 console.log(big(30));
