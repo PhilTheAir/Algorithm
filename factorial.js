@@ -13,7 +13,7 @@ n = Math.min(n, sixZero);
  
 for (var i = 1; i <= n; i ++) {    
 	var f = 1; 
-	for (var j = 1; j <= i; j ++) {
+	for (var j = 1; j <= i; j ++) { 
 		f *= j;
 	}  
 	s = (s + f) % MOD;
