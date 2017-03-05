@@ -15,11 +15,11 @@ for (var i = 1; i <= n; i ++) {
 	var f = 1; 
 	for (var j = 1; j <= i; j ++) { 
 		f *= j;
-	}  
+	}    
 	s = (s + f) % MOD;
 }
 
-// Number.MAX_VALUE // 1.7976931348623157e+308
+// Number.MAX_VALUE // 1.797 6931348623157e+308
 // Number.MIN_VALUE // 5e-324
 console.log(s);
 console.log('Time used : ' + (Date.now() - startTime) / 1000);
