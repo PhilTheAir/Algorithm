@@ -9,7 +9,7 @@ Node.prototype.insert = function(newNode) {
     if(newNode.value < this.value) {
         if(this.left === null) {   
             this.left = newNode;  
-        }    
+        }     
         else {     
             this.left.insert(newNode);   
         }   
