@@ -13,7 +13,7 @@ var n = Number(process.argv[2]);
 var k = Number(process.argv[3]);
 
 var a = [];
- 
+  
 for (var i = 0; i < n; i ++) { 
 	a.push(false);
 } 
@@ -31,4 +31,5 @@ for (var i = 1; i <=n; i ++) {
 		console.log(i);
 	}
 }
+ 
  
