@@ -14,7 +14,7 @@ Node.prototype.insert = function(newNode) {
             this.left.insert(newNode);   
         }    
     }        
-    else if(newNode.value > this.value) {       
+    else if(newNode.value > this.value) {          
         if(this.right === null) { 
             this.right = newNode;
         }   
