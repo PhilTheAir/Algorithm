@@ -24,7 +24,7 @@ for (var abc = 111; abc <= 999; abc ++) {
 			if (aim.indexOf(s.charAt(i)) === -1) {
 				yes = false;
 				break;
-			}
+			}  
 		}
 		if (yes) {
 			console.log('<' + (++count) + '>');
