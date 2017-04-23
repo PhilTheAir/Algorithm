@@ -35,7 +35,7 @@ while (total < Math.pow(n, 2)) {
 	}
 	while ((y + 1 < n) && (a[x][y + 1] === 0)) {
 		a[x][++y] = ++ total;
-	}
+	} 
 }
 
 for (var i = 0; i < n; i ++) {
