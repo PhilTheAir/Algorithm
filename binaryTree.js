@@ -11,7 +11,7 @@ Node.prototype.insert = function(newNode) {
             this.left = newNode;  
         }     
         else {     
-            this.left.insert(newNode);      
+            this.left.insert(newNode);         
         }     
     }         
     else if(newNode.value > this.value) {           
