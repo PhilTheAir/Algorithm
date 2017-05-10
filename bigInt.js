@@ -12,7 +12,7 @@ var big = (n) => {
             var s = a[j] * i + carry;   
             a[j] = s % 10;     
             carry = Math.floor(s / 10);        
-        }            
+        }              
     }      
     var result = '';        
     for (var k = a.length - 1; k >= 0; k --) {      
