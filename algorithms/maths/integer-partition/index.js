@@ -1,1 +1,1 @@
-export * from './integerPartition';
+export * from './integer-partition';
